@@ -14,9 +14,9 @@ SHEET = GSPREAD_CLIENT.open("rent")
 
 sales = SHEET.worksheet('value')
 
-data = sales.get_all_values()
+#data = sales.get_all_values()
 
-print(data)
+#print(data)
 
 def get_house_data():
     """Get the data from the houses/inflation/costs/year/month"""
@@ -32,7 +32,7 @@ def get_house_data():
     
     return sales_data
 
-    def validate_data(values):
+def validate_data(values):
         try:
             [int(value)for value in values]
             if len(values) !=6:
@@ -47,8 +47,34 @@ def get_house_data():
         return True
 
 
-    def update_worksheet(new_row,worksheet):
+def update_worksheet(new_row,worksheet):
           """
           Update the specified worksheet,
           adding a new row with the list data provided.
           """ 
+          print(f"Updating{worksheet}worksheet..\n")
+          worksheet_to_update = SHEET.worksheet(worksheet)
+
+          #adds new row to the end of the current data
+          worksheet_to_update.append_row(new_row)
+
+          print(f"{worksheet}worksheet updated successfully\n")
+
+def calculate_rent(data):
+         """ 
+         Get the input data of the value_house and multiply it with 0.8 plus the inflation and cost
+         """
+
+
+def main():
+            """
+            Run all program functions.
+            """
+            data = get_house_data()
+            sales_data = [int(num) for num in data]
+            update_worksheet(sales_data,"value")
+
+            new_rent = calculate_rent(sales_data)
+
+
+stock_data = main()
