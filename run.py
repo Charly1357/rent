@@ -62,9 +62,19 @@ def update_worksheet(new_row,worksheet):
 
 def calculate_rent(data):
          """ 
-         Get the input data of the value_house and multiply it with 0.8 plus the inflation and cost
+         Get the input data of the value_house and multiply it with 0.8 plus the inflation and the cost cost
          """
-
+         house_number = data[0]
+         house_value = data[1]
+         monthly_inflation = data[2]
+         cost_house = data[3]
+         year = data[4]
+         month = data[5]
+         inflation = (monthly_inflation/100)+1
+         rent_simple = house_value * 0.008
+         rent = rent_simple + cost_house + (rent_simple * inflation)
+         print(rent_simple)
+         
 
 def main():
             """
@@ -72,6 +82,7 @@ def main():
             """
             data = get_house_data()
             sales_data = [int(num) for num in data]
+            calculate_rent(sales_data)
             update_worksheet(sales_data,"value")
 
             new_rent = calculate_rent(sales_data)
