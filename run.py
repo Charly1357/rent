@@ -70,10 +70,14 @@ def calculate_rent(data):
          cost_house = data[3]
          year = data[4]
          month = data[5]
-         inflation = (monthly_inflation/100)+1
+         inflation = (monthly_inflation/100)
          rent_simple = house_value * 0.008
          rent = rent_simple + cost_house + (rent_simple * inflation)
-         print(rent_simple)
+         income = rent/0.3
+         rent_data = house_number,rent,income,year,month
+         rent_int = [int(value)for value in rent_data]
+         print (rent_int)
+         
          
 
 def main():
@@ -82,10 +86,9 @@ def main():
             """
             data = get_house_data()
             sales_data = [int(num) for num in data]
-            calculate_rent(sales_data)
             update_worksheet(sales_data,"value")
-
-            new_rent = calculate_rent(sales_data)
+            calculate_rent(sales_data)
+            
 
 
 stock_data = main()
