@@ -139,5 +139,11 @@ def first_selection():
             if selection !=1 and selection !=2:
                 #clear_screen()
                 print(RED + "Invalid input,please enter a valid number"+ RESET)
+            if selection == 1:
+                data = get_house_data()
+                sales_data = [int(num) for num in data]
+                update_worksheet(sales_data,"value")
+                rent = calculate_rent(sales_data)
+                update_worksheet(rent,"cost")
 
 
