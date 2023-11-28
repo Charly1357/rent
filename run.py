@@ -82,9 +82,9 @@ def calculate_rent(data):
 def houses_rented():
     while True:
          print("Please enter  the data  of the rented house ")
-         house_number = input("Enter your house number")
-         month_rented = input("Enter the month the house was rented")
-         year_rented = input("Enter the year the house was rented")
+         house_number = input("Enter your house number:\n")
+         month_rented = input("Enter the month the house was rented\n")
+         year_rented = input("Enter the year the house was rented:\n")
          sales_data = house_number,month_rented,year_rented
          if validatedata(sales_data):
             break
@@ -115,8 +115,8 @@ def main():
             update_worksheet(sales_data,"value")
             rent = calculate_rent(sales_data)
             update_worksheet(rent,"cost")
-            house_rented = houses_rented()
-            update_worksheet(house_rented,"rent_house")
+            housrented = houses_rented()
+            update_worksheet(housrented,"rent_house")
 
 
 stock_data = main()
