@@ -1,4 +1,6 @@
 import gspread
+import pandas as pd
+import numpy as np
 from google.oauth2.service_account import Credentials
 from colorama import Fore,Style,Back
 
@@ -18,6 +20,15 @@ sales = SHEET.worksheet('value')
 #data = sales.get_all_values()
 
 #print(data)
+"""
+Colorama colours for the terminal
+"""
+RED = Fore.RED
+WHITE = Fore.WHITE
+YELLOW = Fore.YELLOW
+BLUE = Fore.BLUE
+BRIGHT = Style.BRIGHT
+RESET = Style.RESET_ALL
 
 def get_house_data():
     """Get the data from the houses/inflation/costs/year/month"""
@@ -127,9 +138,9 @@ def first_selection():
       The user chooses between the different options
     """
     selection = 0
-    while selection !=1 and selection !=2 
+    while selection !=1 and selection !=2:
         try:
-            print(BLUE + BRIGHT+ "Main Menu" + RESET)
+            print(BLUE + BRIGHT + "Main Menu" + RESET)
             print(WHITE + BRIGHT + "Select an option:\n")
             print("1 - Input data houses")
             print("2 - Input data rented houses")
@@ -139,11 +150,19 @@ def first_selection():
             if selection !=1 and selection !=2:
                 #clear_screen()
                 print(RED + "Invalid input,please enter a valid number"+ RESET)
-            if selection == 1:
-                data = get_house_data()
-                sales_data = [int(num) for num in data]
-                update_worksheet(sales_data,"value")
-                rent = calculate_rent(sales_data)
-                update_worksheet(rent,"cost")
+        except ValueError:
+            print("Invalid input")
+        if selection == 1:
+            data = get_house_data()
+            sales_data = [int(num) for num in data]
+            update_worksheet(sales_data,"value")
+            rent = calculate_rent(sales_data)
+            update_worksheet(rent,"cost")
+        elif selection == 2:
+            survey_result()
+        elif selection == 3:
+            goodbye()
+
+first_selection()
 
 
