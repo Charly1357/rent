@@ -1,5 +1,6 @@
 import gspread
 from google.oauth2.service_account import Credentials
+from colorama import Fore,Style,Back
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -110,13 +111,33 @@ def main():
             """
             Run all program functions.
             """
-            data = get_house_data()
-            sales_data = [int(num) for num in data]
-            update_worksheet(sales_data,"value")
-            rent = calculate_rent(sales_data)
-            update_worksheet(rent,"cost")
-            housrented = houses_rented()
-            update_worksheet(housrented,"rent_house")
+            #data = get_house_data()
+            #sales_data = [int(num) for num in data]
+            #update_worksheet(sales_data,"value")
+            #rent = calculate_rent(sales_data)
+            #update_worksheet(rent,"cost")
+            #housrented = houses_rented()
+            #update_worksheet(housrented,"rent_house")
 
 
-stock_data = main()
+#stock_data = main()
+
+def first_selection():
+    """
+      The user chooses between the different options
+    """
+    selection = 0
+    while selection !=1 and selection !=2 
+        try:
+            print(BLUE + BRIGHT+ "Main Menu" + RESET)
+            print(WHITE + BRIGHT + "Select an option:\n")
+            print("1 - Input data houses")
+            print("2 - Input data rented houses")
+            print("3 - Show value houses")
+            print("4 - Show houses rented")
+            selection = int(input(YELLOW + BRIGHT + "Enter your choice:" + RESET))
+            if selection !=1 and selection !=2:
+                #clear_screen()
+                print(RED + "Invalid input,please enter a valid number"+ RESET)
+
+
