@@ -77,8 +77,34 @@ def calculate_rent(data):
          rent_data = house_number,rent,income,year,month
          rent_int = [int(value)for value in rent_data]
          return (rent_int)
-         
-         
+
+
+def houses_rented():
+    while True:
+         print("Please enter  the data  of the rented house ")
+         house_number = input("Enter your house number")
+         month_rented = input("Enter the month the house was rented")
+         year_rented = input("Enter the year the house was rented")
+         sales_data = house_number,month_rented,year_rented
+         if validatedata(sales_data):
+            break
+    
+    return sales_data
+
+
+def validatedata(values):
+        try:
+            [int(value)for value in values]
+            if len(values) !=3:
+                raise ValueError(
+                    f"Exactly 6 values are required,you provided{len(values)}"
+                )
+
+        except ValueError as e:
+            print(f"Invalid data: {e},please try again\n")
+            return False
+
+        return True      
 
 def main():
             """
@@ -88,8 +114,9 @@ def main():
             sales_data = [int(num) for num in data]
             update_worksheet(sales_data,"value")
             rent = calculate_rent(sales_data)
-            update_worksheet(sales_data,"cost")
-            
+            update_worksheet(rent,"cost")
+            house_rented = houses_rented()
+            update_worksheet(house_rented,"rent_house")
 
 
 stock_data = main()
