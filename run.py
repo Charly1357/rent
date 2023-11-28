@@ -76,7 +76,7 @@ def calculate_rent(data):
          income = rent/0.3
          rent_data = house_number,rent,income,year,month
          rent_int = [int(value)for value in rent_data]
-         print (rent_int)
+         return (rent_int)
          
          
 
@@ -87,7 +87,8 @@ def main():
             data = get_house_data()
             sales_data = [int(num) for num in data]
             update_worksheet(sales_data,"value")
-            calculate_rent(sales_data)
+            rent = calculate_rent(sales_data)
+            update_worksheet(sales_data,"cost")
             
 
 
