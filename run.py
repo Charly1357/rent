@@ -138,6 +138,9 @@ def main():
 
 
 #stock_data = main()
+def valuehouse():
+    stock = SHEET.worksheet("value").get_all_values()
+    print(f" {stock} :\n")
 
 def clear_screen():
     if os.name == "posix":
@@ -160,6 +163,7 @@ def first_selection():
       The user chooses between the different options
     """
     selection = 0
+    clear_screen()
     while selection !=1 and selection !=2:
         try:
             print(BLUE + BRIGHT + "Main Menu" + RESET)
@@ -181,9 +185,15 @@ def first_selection():
             update_worksheet(sales_data,"value")
             rent = calculate_rent(sales_data)
             update_worksheet(rent,"cost")
+            clear_screen()
+            first_selection()
         elif selection == 2:
             houserented = houses_rented()
             update_worksheet(houserented,"rent_house")
+            clear_screen()
+            first_selection()
+        elif selection == 3:
+            valuehouse()
         elif selection == 5:
             goodbye()
 welcome()
