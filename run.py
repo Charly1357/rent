@@ -142,10 +142,11 @@ def main():
 def valuehouse():
     stock = SHEET.worksheet("value").get_all_values()
     #print(f" {stock} :\n")
-    table1 = tabulate(stock)
-    table2 = tabulate(stock,headers='firstrow')
-    print(table1)
-    print(table2)
+    #table1 = tabulate(stock)
+    #table2 = tabulate(stock,headers='firstrow')
+    #print(table1)
+    #print(table2)
+    print(tabulate(stock,header='firstrow',tablefmt='grid'))
  
 
 
