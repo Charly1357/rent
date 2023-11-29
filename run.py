@@ -146,7 +146,7 @@ def valuehouse():
     #table2 = tabulate(stock,headers='firstrow')
     #print(table1)
     #print(table2)
-    print(tabulate(stock,header='firstrow',tablefmt='grid'))
+    print(tabulate(stock,headers='firstrow',tablefmt='grid'))
  
 
 
