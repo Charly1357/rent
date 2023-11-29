@@ -159,7 +159,8 @@ def first_selection():
             rent = calculate_rent(sales_data)
             update_worksheet(rent,"cost")
         elif selection == 2:
-            survey_result()
+            houserented = houses_rented()
+            update_worksheet(houserented,"rent_house")
         elif selection == 3:
             goodbye()
 
