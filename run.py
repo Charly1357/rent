@@ -46,7 +46,7 @@ def get_house_data():
         if validate_data(data_str):
             break
     
-    return sales_data
+    return data_str
 
 def validate_data(values):
         try:
