@@ -181,6 +181,7 @@ def first_selection():
             print("2 - Input data rented houses")
             print("3 - Show value houses")
             print("4 - Show houses rented")
+            print("4 - Show rent house income necesary")
             print("6 - Exit")
             selection = int(input(YELLOW + BRIGHT + "Enter your choice:" + RESET))
             if selection !=1 and selection !=2 and selection !=3 and selection !=4 and selection !=5:
