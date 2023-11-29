@@ -1,6 +1,8 @@
 import gspread
 import pandas as pd
 import numpy as np
+import os
+
 from google.oauth2.service_account import Credentials
 from colorama import Fore,Style,Back
 
@@ -137,6 +139,16 @@ def main():
 
 #stock_data = main()
 
+def clear_screen():
+    if os.name == "posix":
+        _=os.system("clear")
+    else:
+        _os.system("cls")
+
+def welcome():
+    clear_screen()
+    first_selection()
+
 def first_selection():
     """
       The user chooses between the different options
@@ -150,8 +162,9 @@ def first_selection():
             print("2 - Input data rented houses")
             print("3 - Show value houses")
             print("4 - Show houses rented")
+            print("5 - Exit")
             selection = int(input(YELLOW + BRIGHT + "Enter your choice:" + RESET))
-            if selection !=1 and selection !=2:
+            if selection !=1 and selection !=2 and selection !=3 and selection !=4 and selection !=5:
                 #clear_screen()
                 print(RED + "Invalid input,please enter a valid number"+ RESET)
         except ValueError:
@@ -167,7 +180,7 @@ def first_selection():
             update_worksheet(houserented,"rent_house")
         elif selection == 3:
             goodbye()
+welcome()
 
-first_selection()
 
 
