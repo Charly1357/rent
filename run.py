@@ -149,6 +149,12 @@ def welcome():
     clear_screen()
     first_selection()
 
+def goodbye():
+    print("Good bye")
+    clear_screen()
+    exit()
+
+
 def first_selection():
     """
       The user chooses between the different options
@@ -178,7 +184,7 @@ def first_selection():
         elif selection == 2:
             houserented = houses_rented()
             update_worksheet(houserented,"rent_house")
-        elif selection == 3:
+        elif selection == 5:
             goodbye()
 welcome()
 
