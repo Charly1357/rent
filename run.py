@@ -2,6 +2,7 @@ import gspread
 import pandas as pd
 import numpy as np
 import os
+from tabulate import tabulate
 
 from google.oauth2.service_account import Credentials
 from colorama import Fore,Style,Back
