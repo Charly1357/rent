@@ -33,8 +33,7 @@ RESET = Style.RESET_ALL
 def get_house_data():
     """Get the data from the houses/inflation/costs/year/month"""
     while True:
-        print("Please enter the house_number,value_house,monthly-inflation,cost per house,year,month")
-        print("1,200000,12,1500,2023,11")
+        print("Please enter the values of the house in whole numbers")
         house_number = input("Enter your house number:\n")
         value_house = input("Enter the value of your house:\n")
         monthly_inflation = input("Enter the monthly_inflation:\n")
@@ -44,7 +43,7 @@ def get_house_data():
         data_str = house_number,value_house,monthly_inflation,cost,year,month
         
 
-        if validate_data(sales_data):
+        if validate_data(data_str):
             break
     
     return sales_data
