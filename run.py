@@ -142,6 +142,15 @@ def valuehouse():
     stock = SHEET.worksheet("value").get_all_values()
     print(f" {stock} :\n")
 
+
+def renthouse():
+    stock = SHEET.worksheet("rent_house").get_all_values()
+    print(f" {stock} :\n")
+
+def rent_income():
+    stock = SHEET.worksheet("cost").get_all_values()
+    print(f" {stock} :\n")
+
 def clear_screen():
     if os.name == "posix":
         _=os.system("clear")
@@ -172,7 +181,7 @@ def first_selection():
             print("2 - Input data rented houses")
             print("3 - Show value houses")
             print("4 - Show houses rented")
-            print("5 - Exit")
+            print("6 - Exit")
             selection = int(input(YELLOW + BRIGHT + "Enter your choice:" + RESET))
             if selection !=1 and selection !=2 and selection !=3 and selection !=4 and selection !=5:
                 #clear_screen()
@@ -194,7 +203,11 @@ def first_selection():
             first_selection()
         elif selection == 3:
             valuehouse()
+        elif selection == 4:
+            renthouse()
         elif selection == 5:
+            rent_income()  
+        elif selection == 6:
             goodbye()
 welcome()
 
