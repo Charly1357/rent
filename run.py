@@ -35,9 +35,14 @@ def get_house_data():
     while True:
         print("Please enter the house_number,value_house,monthly-inflation,cost per house,year,month")
         print("1,200000,12,1500,2023,11")
-        data_str = input("Enter your data here:\n")
+        house_number = input("Enter your house number:\n")
+        value_house = input("Enter the value of your house:\n")
+        monthly_inflation = input("Enter the monthly_inflation:\n")
+        cost = input("Enter the cost you had to invest in the house:\n")
+        year = input("Enter the year:\n")
+        month = input("Enter the month:\n")
+        data_str = house_number,value_house,monthly_inflation,cost,year,month
         
-        sales_data = list(data_str.split(","))
 
         if validate_data(sales_data):
             break
