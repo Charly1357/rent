@@ -141,22 +141,17 @@ def main():
 #stock_data = main()
 def valuehouse():
     stock = SHEET.worksheet("value").get_all_values()
-    #print(f" {stock} :\n")
-    #table1 = tabulate(stock)
-    #table2 = tabulate(stock,headers='firstrow')
-    #print(table1)
-    #print(table2)
     print(tabulate(stock,headers='firstrow',tablefmt='grid'))
  
 
 
 def renthouse():
     stock = SHEET.worksheet("rent_house").get_all_values()
-    print(f" {stock} :\n")
+    print(tabulate(stock,headers='firstrow',tablefmt='grid'))
 
 def rent_income():
     stock = SHEET.worksheet("cost").get_all_values()
-    print(f" {stock} :\n")
+    print(tabulate(stock,headers='firstrow',tablefmt='grid'))
 
 def clear_screen():
     if os.name == "posix":
