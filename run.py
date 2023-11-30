@@ -2,6 +2,7 @@ import gspread
 import pandas as pd
 import numpy as np
 import os
+import time
 from tabulate import tabulate
 
 from google.oauth2.service_account import Credentials
@@ -192,13 +193,11 @@ def first_selection():
             print("7 - Exit")
             selection = int(input(YELLOW + BRIGHT + "Enter your choice:" + RESET))
             if selection !=1 and selection !=2 and selection !=3 and selection !=4 and selection !=5 and selection !=6 and selection !=7:
-                clear_screen()
+                
                 print(RED + "Invalid input,please enter a valid number"+ RESET)
         except ValueError:
-            clear_screen()
             print("Invalid input")
         if selection == 1:
-            clear_screen()
             data = get_house_data()
             sales_data = [int(num) for num in data]
             update_worksheet(sales_data,"value")
@@ -207,13 +206,14 @@ def first_selection():
             clear_screen()
             first_selection()
         elif selection == 2:
-            clear_screen()
             houserented = houses_rented()
             update_worksheet(houserented,"rent_house")
             clear_screen()
             first_selection()
         elif selection == 3:
             valuehouse()
+            time_sleep(50)
+            first_selection()
         elif selection == 4:
             clear_screen()
             renthouse()
