@@ -143,7 +143,10 @@ def valuehouse():
     stock = SHEET.worksheet("value").get_all_values()
     print(tabulate(stock,headers='firstrow',tablefmt='grid'))
  
-
+def maxrent():
+    rentmax = SHEET.worksheet('cost').get_all_values()
+    max_value = rentmax['rent'].max()
+    print(f"The maximum rent is {max_value}.")
 
 def renthouse():
     stock = SHEET.worksheet("rent_house").get_all_values()
@@ -184,7 +187,8 @@ def first_selection():
             print("3 - Show value houses")
             print("4 - Show houses rented")
             print("5 - Show rent house income necesary")
-            print("6 - Exit")
+            print("6 - Show the highest rent ")
+            print("7 - Exit")
             selection = int(input(YELLOW + BRIGHT + "Enter your choice:" + RESET))
             if selection !=1 and selection !=2 and selection !=3 and selection !=4 and selection !=5:
                 #clear_screen()
@@ -211,6 +215,8 @@ def first_selection():
         elif selection == 5:
             rent_income()  
         elif selection == 6:
+            maxrent()
+        elif selection == 7:
             goodbye()
 welcome()
 
