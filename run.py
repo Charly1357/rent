@@ -147,8 +147,12 @@ def valuehouse():
 def maxrent():
     rentmax = SHEET.worksheet('cost').get_all_values()
     df = pd.DataFrame(rentmax[1:],columns = rentmax[0])
-    max_value = df['rent'].max()
-    print(f"\n The maximum rent is {max_value}.\n")
+    #max_value = df['rent'].max()
+    #print(f"\n The maximum rent is {max_value}.\n")
+    max_index = df['rent'].idxmax()
+    #max_row = df.loc[max_index]
+    selected_row = df.iloc[max_index]
+    print(selected_row)
 
 def renthouse():
     stock = SHEET.worksheet("rent_house").get_all_values()
