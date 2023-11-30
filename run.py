@@ -215,7 +215,6 @@ def first_selection():
         elif selection == 3:
             clear_screen()
             valuehouse()
-            first_selection()
         elif selection == 4:
             clear_screen()
             renthouse()
