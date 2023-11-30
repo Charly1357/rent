@@ -235,7 +235,7 @@ def first_selection():
         elif selection == 6:
             clear_screen()
             maxrent()
-            time.sleep(5)
+            time.sleep(10)
             clear_screen()
             first_selection()
         elif selection == 7:
