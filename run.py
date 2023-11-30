@@ -218,12 +218,18 @@ def first_selection():
         elif selection == 4:
             clear_screen()
             renthouse()
+            time.sleep(5)
+            clear_screen()
         elif selection == 5:
             clear_screen()
             rent_income() 
+            time.sleep(5)
+            clear_screen()
         elif selection == 6:
             clear_screen()
             maxrent()
+            time.sleep(5)
+            clear_screen()
         elif selection == 7:
             goodbye()
 welcome()
