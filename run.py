@@ -170,6 +170,7 @@ def welcome():
 
 def goodbye():
     print("Good bye")
+    time.sleep(3)
     clear_screen()
     exit()
 
