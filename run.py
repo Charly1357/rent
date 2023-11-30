@@ -147,7 +147,7 @@ def maxrent():
     rentmax = SHEET.worksheet('cost').get_all_values()
     df = pd.DataFrame(rentmax[1:],columns = rentmax[0])
     max_value = df['rent'].max()
-    print(f"The maximum rent is {max_value}.")
+    print(f"\n The maximum rent is {max_value}.\n")
 
 def renthouse():
     stock = SHEET.worksheet("rent_house").get_all_values()
@@ -191,7 +191,7 @@ def first_selection():
             print("6 - Show the highest rent ")
             print("7 - Exit")
             selection = int(input(YELLOW + BRIGHT + "Enter your choice:" + RESET))
-            if selection !=1 and selection !=2 and selection !=3 and selection !=4 and selection !=5 and selection !=6:
+            if selection !=1 and selection !=2 and selection !=3 and selection !=4 and selection !=5 and selection !=6 and selection !=7:
                 #clear_screen()
                 print(RED + "Invalid input,please enter a valid number"+ RESET)
         except ValueError:
