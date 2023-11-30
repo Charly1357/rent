@@ -213,7 +213,6 @@ def first_selection():
             clear_screen()
             first_selection()
         elif selection == 3:
-            clear_screen()
             valuehouse()
         elif selection == 4:
             clear_screen()
