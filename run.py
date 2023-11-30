@@ -179,9 +179,9 @@ def first_selection():
     """
     selection = 0
     clear_screen()
-    while selection !=1 and selection !=2:
+    while selection !=1 and selection !=2 and selection !=3 and selection !=4 and selection !=5 and selection !=6 and selection !=7:
         try:
-            print(BLUE + BRIGHT + "Main Menu" + RESET)
+            print(BLUE + BRIGHT + "*** Main Menu ***" + RESET)
             print(WHITE + BRIGHT + "Select an option:\n")
             print("1 - Input data houses")
             print("2 - Input data rented houses")
@@ -192,11 +192,13 @@ def first_selection():
             print("7 - Exit")
             selection = int(input(YELLOW + BRIGHT + "Enter your choice:" + RESET))
             if selection !=1 and selection !=2 and selection !=3 and selection !=4 and selection !=5 and selection !=6 and selection !=7:
-                #clear_screen()
+                clear_screen()
                 print(RED + "Invalid input,please enter a valid number"+ RESET)
         except ValueError:
+            clear_screen()
             print("Invalid input")
         if selection == 1:
+            clear_screen()
             data = get_house_data()
             sales_data = [int(num) for num in data]
             update_worksheet(sales_data,"value")
@@ -205,17 +207,22 @@ def first_selection():
             clear_screen()
             first_selection()
         elif selection == 2:
+            clear_screen()
             houserented = houses_rented()
             update_worksheet(houserented,"rent_house")
             clear_screen()
             first_selection()
         elif selection == 3:
+            clear_screen()
             valuehouse()
         elif selection == 4:
+            clear_screen()
             renthouse()
         elif selection == 5:
+            clear_screen()
             rent_income()  
         elif selection == 6:
+            clear_screen()
             maxrent()
         elif selection == 7:
             goodbye()
