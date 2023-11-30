@@ -215,12 +215,13 @@ def first_selection():
         elif selection == 3:
             clear_screen()
             valuehouse()
+            first_selection()
         elif selection == 4:
             clear_screen()
             renthouse()
         elif selection == 5:
             clear_screen()
-            rent_income()  
+            rent_income() 
         elif selection == 6:
             clear_screen()
             maxrent()
