@@ -212,7 +212,7 @@ def first_selection():
             first_selection()
         elif selection == 3:
             valuehouse()
-            time.sleep(20)
+            time.sleep(5)
             clear_screen()
             first_selection()
         elif selection == 4:
