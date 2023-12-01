@@ -99,12 +99,14 @@ def calculate_rent(data):
 
 
 def houses_rented():
+    clear_screen()
     while True:
          print("Please enter  the data  of the rented house ")
          house_number = input("Enter your house number:\n")
          month_rented = input("Enter the month the house was rented\n")
          year_rented = input("Enter the year the house was rented:\n")
          sales_data = house_number,month_rented,year_rented
+         clear_screen()
          if validatedata(sales_data):
             break
     
