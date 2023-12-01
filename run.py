@@ -99,6 +99,7 @@ def calculate_rent(data):
          rent_int = [int(value)for value in rent_data]
          return (rent_int)
 
+""" Input data about the rented houses """
 
 def houses_rented():
     clear_screen()
@@ -114,13 +115,14 @@ def houses_rented():
     
     return sales_data
 
+""" validation of the rented houses """
 
 def validatedata(values):
         try:
             [int(value)for value in values]
             if len(values) !=3:
                 raise ValueError(
-                    f"Exactly 6 values are required,you provided{len(values)}"
+                    f"Exactly 3 values are required,you provided{len(values)}"
                 )
 
         except ValueError as e:
@@ -129,41 +131,34 @@ def validatedata(values):
 
         return True      
 
-def main():
-            """
-            Run all program functions.
-            """
-            #data = get_house_data()
-            #sales_data = [int(num) for num in data]
-            #update_worksheet(sales_data,"value")
-            #rent = calculate_rent(sales_data)
-            #update_worksheet(rent,"cost")
-            #housrented = houses_rented()
-            #update_worksheet(housrented,"rent_house")
+""" Sheet with the data of the house number value of the house inflation/month cost/month year month """
 
-
-#stock_data = main()
 def valuehouse():
     stock = SHEET.worksheet("value").get_all_values()
     print(tabulate(stock,headers='firstrow',tablefmt='grid'))
- 
+
+""" Calculation of the highest rent from the worksheet rent """
+
 def maxrent():
     rentmax = SHEET.worksheet('cost').get_all_values()
     df = pd.DataFrame(rentmax[1:],columns = rentmax[0])
-    #max_value = df['rent'].max()
-    #print(f"\n The maximum rent is {max_value}.\n")
     max_index = df['rent'].idxmax()
-    #max_row = df.loc[max_index]
     selected_row = df.iloc[max_index]
     print(selected_row)
+
+""" All the data from the rented houses is printed """
 
 def renthouse():
     stock = SHEET.worksheet("rent_house").get_all_values()
     print(tabulate(stock,headers='firstrow',tablefmt='grid'))
 
+""" All the data from the house is printed """
+
 def rent_income():
     stock = SHEET.worksheet("cost").get_all_values()
     print(tabulate(stock,headers='firstrow',tablefmt='grid'))
+
+""" The screen is cleared for the user to see his input """
 
 def clear_screen():
     if os.name == "posix":
@@ -180,7 +175,8 @@ def goodbye():
     time.sleep(3)
     clear_screen()
     exit()
-
+    
+""" The main area of the programm where the user selects his area of interest """
 
 def first_selection():
     """
