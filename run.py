@@ -198,9 +198,10 @@ def first_selection():
             print("7 - Exit")
             selection = int(input(YELLOW + BRIGHT + "Enter your choice:" + RESET))
             if selection !=1 and selection !=2 and selection !=3 and selection !=4 and selection !=5 and selection !=6 and selection !=7:
-                
+                clear_screen()
                 print(RED + "Invalid input,please enter a valid number"+ RESET)
         except ValueError:
+            clear_screen()
             print("Invalid input")
         if selection == 1:
             data = get_house_data()
