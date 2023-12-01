@@ -7,7 +7,7 @@ from tabulate import tabulate
 
 from google.oauth2.service_account import Credentials
 from colorama import Fore,Style,Back
-
+""" Library imports """
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive.file",
@@ -21,9 +21,7 @@ SHEET = GSPREAD_CLIENT.open("rent")
 
 sales = SHEET.worksheet('value')
 
-#data = sales.get_all_values()
 
-#print(data)
 """
 Colorama colours for the terminal
 """
@@ -36,6 +34,7 @@ RESET = Style.RESET_ALL
 
 def get_house_data():
     """Get the data from the houses/inflation/costs/year/month"""
+    clear_screen()
     while True:
         print("Please enter the values of the house in whole numbers")
         house_number = input("Enter your house number:\n")
@@ -45,7 +44,7 @@ def get_house_data():
         year = input("Enter the year:\n")
         month = input("Enter the month:\n")
         data_str = house_number,value_house,monthly_inflation,cost,year,month
-        
+        clear_screen()
 
         if validate_data(data_str):
             break
