@@ -7,7 +7,7 @@ from tabulate import tabulate
 
 from google.oauth2.service_account import Credentials
 from colorama import Fore,Style,Back
-""" Library imports """
+""" Library imports pandas for the data tabulate for the rows and columns of data etc"""
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive.file",
@@ -50,7 +50,7 @@ def get_house_data():
             break
     
     return data_str
-
+""" Validate the input data """
 def validate_data(values):
         try:
             [int(value)for value in values]
@@ -81,7 +81,9 @@ def update_worksheet(new_row,worksheet):
 
 def calculate_rent(data):
          """ 
-         Get the input data of the value_house and multiply it with 0.8 plus the inflation and the cost cost
+         Calculate rent get the input data of the value_house and multiply it with 0.8 plus the inflation cost
+         and the cost to maintain the house.Calculate the necesary income for the rent only 30% of the income should be used 
+         for the rent
          """
          house_number = data[0]
          house_value = data[1]
