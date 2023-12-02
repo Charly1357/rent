@@ -29,6 +29,7 @@ RED = Fore.RED
 WHITE = Fore.WHITE
 YELLOW = Fore.YELLOW
 BLUE = Fore.BLUE
+GREEN = Fore.GREEN
 BRIGHT = Style.BRIGHT
 RESET = Style.RESET_ALL
 
@@ -188,13 +189,13 @@ def first_selection():
         try:
             print(BLUE + BRIGHT + "*** Main Menu ***" + RESET)
             print(WHITE + BRIGHT + "Select an option:\n")
-            print("1 - Input data houses")
+            print(GREEN + BRIGHT + "1 - Input data houses" + RESET)
             print("2 - Input data rented houses")
             print("3 - Show value houses")
             print("4 - Show houses rented")
             print("5 - Show rent house income necesary")
             print("6 - Show the highest rent ")
-            print("7 - Exit")
+            print(RED + BRIGHT + "7 - Exit" + RESET)
             selection = int(input(YELLOW + BRIGHT + "Enter your choice:" + RESET))
             if selection !=1 and selection !=2 and selection !=3 and selection !=4 and selection !=5 and selection !=6 and selection !=7:
                 clear_screen()
