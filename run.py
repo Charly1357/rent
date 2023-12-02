@@ -4,7 +4,7 @@ import numpy as np
 import os
 import time
 from tabulate import tabulate
-from rich.console import Console
+
 
 console = Console()
 
@@ -176,7 +176,6 @@ def welcome():
 
 def goodbye():
     print("\n *** Thanks and Goodbye ***\n")
-    console.print("[italic bold green blink] *** Thanks and Goodbye*** [/italic bold green blink]")
     time.sleep(3)
     clear_screen()
     exit()
