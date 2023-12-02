@@ -158,7 +158,7 @@ def rent_income():
     stock = SHEET.worksheet("cost").get_all_values()
     print(tabulate(stock,headers='firstrow',tablefmt='grid'))
 
-""" The screen is cleared for the user to see his input """
+""" The screen is cleared otherwise the screen would have to much information """
 
 def clear_screen():
     if os.name == "posix":
