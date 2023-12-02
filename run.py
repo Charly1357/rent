@@ -187,7 +187,7 @@ def first_selection():
     clear_screen()
     while selection !=1 and selection !=2 and selection !=3 and selection !=4 and selection !=5 and selection !=6 and selection !=7:
         try:
-            print(BLUE + BRIGHT + "*** Main Menu ***" + RESET)
+            print(BLUE + BRIGHT + "*** Main Menu ***\n" + RESET)
             print(WHITE + BRIGHT + "Select an option:\n")
             print(GREEN + BRIGHT + "1 - Input data houses" + RESET)
             print(GREEN + BRIGHT +"2 - Input data rented houses" + RESET)
@@ -195,7 +195,7 @@ def first_selection():
             print(GREEN + BRIGHT +"4 - Show houses rented" + RESET)
             print(GREEN + BRIGHT +"5 - Show rent house income necesary" + RESET)
             print(GREEN + BRIGHT +"6 - Show the highest rent " + RESET)
-            print(RED + BRIGHT + "7 - Exit" + RESET)
+            print(RED + BRIGHT + "7 - Exit\n" + RESET)
             selection = int(input(YELLOW + BRIGHT + "Enter your choice:" + RESET))
             if selection !=1 and selection !=2 and selection !=3 and selection !=4 and selection !=5 and selection !=6 and selection !=7:
                 clear_screen()
