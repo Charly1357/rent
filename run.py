@@ -6,8 +6,6 @@ import time
 from tabulate import tabulate
 
 
-console = Console()
-
 from google.oauth2.service_account import Credentials
 from colorama import Fore,Style,Back
 """ Library imports pandas for the data tabulate for the rows and columns of data etc"""
