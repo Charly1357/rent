@@ -4,6 +4,9 @@ import numpy as np
 import os
 import time
 from tabulate import tabulate
+from rich.console import Console
+
+console = Console()
 
 from google.oauth2.service_account import Credentials
 from colorama import Fore,Style,Back
@@ -172,7 +175,8 @@ def welcome():
     first_selection()
 
 def goodbye():
-    print("Good bye")
+    print("\n *** Thanks and Goodbye ***\n")
+    console.print("[italic bold green blink] *** Thanks and Goodbye*** [/italic bold green blink]")
     time.sleep(3)
     clear_screen()
     exit()
