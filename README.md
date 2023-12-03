@@ -21,7 +21,7 @@ https://renting-eeafc7b2d4e6.herokuapp.com/
 2. [Features](#features)
     - [Main Menu](#main-menu)
     - [House Data](#house-data)
-    - [Rented Houses](#rented houses)
+    - [Rented Houses](#rented-houses)
    
 
 
