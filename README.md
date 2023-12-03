@@ -127,7 +127,7 @@ the necesary income:
     - month
 ![Show rent and income house]()
 
-- The sixth option shows the
+- The sixth option shows the filter of the
 highest rent:
      - house_number
      - rent
@@ -141,6 +141,8 @@ the:
      - Exit
      - ***Thanks and Goodbye ***
 ![Exit]()
+
+
 
 
 
