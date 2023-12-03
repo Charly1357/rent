@@ -90,6 +90,7 @@ and the message "Enter your choice:"
 multiply it with 0.008 add the inflation/100 and the costs/month and you have the
 rent and the necesary income is calculated by rent/0.3 this means that only
 30% of your income should be used for the rent.
+In all the input data option the data is always validated if it is correct
 - In the first option Input data houses the user will input the number of
 the house:
    - The value of the house
