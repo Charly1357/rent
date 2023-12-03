@@ -22,8 +22,22 @@ https://renting-eeafc7b2d4e6.herokuapp.com/
     - [Main Menu](#main-menu)
     - [House Data](#house-data)
     - [Rented Houses](#rented-houses)
-   
-
+    - [View Result](#view-result)
+    - [Exit Screen](#exit-screen)
+3. [Technologies Used](#technologies-used)
+    -[Languages](#languages)
+    -[Frameworks,Libraries  Programms](#frameworks-libraries-programms)
+4. [Testing](#testing)
+    -[Testing User Stories](#testing-user-stories)
+    -[Code Validation](#code-validation)
+    -[Feature Testing](#feature-testing)
+5. [Deployment](#deployment)
+6. [Credit](#credit)
+    -[Content](#content)
+    -[Media](#media)
+    -[Code](#code)
+7. [Acknowledgements|(#acknowledgements)
+    
 
 
 
