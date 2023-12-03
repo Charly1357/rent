@@ -36,7 +36,7 @@ https://renting-eeafc7b2d4e6.herokuapp.com/
     -[Content](#content)
     -[Media](#media)
     -[Code](#code)
-7. [Acknowledgements|(#acknowledgements)
+7. [Acknowledgements](#acknowledgements)
     
 
 
