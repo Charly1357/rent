@@ -93,10 +93,23 @@ the house:
    - The cost per month of the house
    - The year
    - The month
-- In the second option Input rented the user will input the number of 
+![Input data house]()
+
+- In the second option Input data house rented the user will input the number of 
 the house:
    - The month rented
    - The year rented
+![Input house rented]()
+
+- The third option shows te value of
+the houses:
+   - num/house the number of the house
+   - v/house the value of the house
+   - inflat/month the monthly inflations
+   - cost/month
+   - year
+   - month
+
 
      
 
