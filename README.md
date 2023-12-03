@@ -20,6 +20,8 @@ https://renting-eeafc7b2d4e6.herokuapp.com/
     - [Flowchart](#flowchart)
 2. [Features](#features)
     - [Main Menu](#main-menu)
+    - [Input of House Data](#input of house-data)
+    - [Input of Rented Houses](#input of rented houses)
    
 
 
