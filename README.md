@@ -67,3 +67,21 @@ the other for the house rented<br>
 
 ## Features
 
+### Main Menu
+-This screen shows the survey main menu that gives the user 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
