@@ -48,6 +48,22 @@ https://renting-eeafc7b2d4e6.herokuapp.com/
 
 ### User Stories
 -As a user,I would like that the program helps me to earn more money
+-I would like to choose whether to input data or see the results or exit
+-As a user, I would like to see my results filtered according to my needs
 
+### Data Model
 
+The program uses a Google sheet to store the information collected from 
+the input.
+
+A pandas data frame is used to filter the highest rent
+
+The user can select between two input once for the value of the house<br>
+the other for the house rented<br>
+
+### Flowchart
+
+![Flowchart]()
+
+## Features
 
