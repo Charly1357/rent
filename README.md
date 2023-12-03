@@ -125,7 +125,33 @@ the necesary income:
     - income
     - year
     - month
-  ![Show rent and income house]()
+![Show rent and income house]()
+
+- The sixth option shows the
+highest rent:
+     - house_number
+     - rent
+     - income
+     - year
+     - month
+![Show highest rent]()
+
+- The seventh option shows
+the:
+     - Exit
+     - ***Thanks and Goodbye ***
+![Exit]()
+
+
+
+
+
+
+
+
+
+
+
 
 
 
