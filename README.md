@@ -13,6 +13,12 @@ The project can be viewed :
 https://renting-eeafc7b2d4e6.herokuapp.com/
 
 ## Table of Contents
+1 .[User Experience](#user-experience-ux)
+     -[Project Goals](#project-goalse)
+     -[User Stories](#user-stories)
+     -[Data Model](#data-model)
+     -[Flowchart](#flowchart)
+2 .[
 
 
 
