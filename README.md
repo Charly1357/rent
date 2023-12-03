@@ -68,7 +68,14 @@ the other for the house rented<br>
 ## Features
 
 ### Main Menu
--This screen shows the survey main menu that gives the user 
+-This screen shows the survey main menu that gives the user six options
+      - Input data houses
+      - Input data rented houses
+      - Show value houses
+      - Show houses rented
+      - Show rent house income necesary
+      - Show the highest rent
+      - Exit
 
 
 
