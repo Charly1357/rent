@@ -109,6 +109,25 @@ the houses:
    - cost/month
    - year
    - month
+![Show house data]()
+
+- The fourth option shows the
+houses rented:
+    - house number of the house
+    - month the month it is rented
+    - year the year it is rented
+![Show house rented]()
+
+- The fifth option shows the rent and
+the necesary income:
+    - house_number
+    - rent
+    - income
+    - year
+    - month
+  ![Show rent and income house]()
+
+
 
 
      
