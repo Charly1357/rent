@@ -87,12 +87,13 @@ experience allowing him to performe various actions in each menu.
 - This part of the program shows all the questions with the options below<br>
 and the message "Enter your choice:"
 
-- In the first option the user will input the number of the house
- - The value of the house
- - The inflation per month
- - The cost per month of the house
- - The year
- - The month
+- In the first option the user will input the number of
+the house:
+   - The value of the house
+   - The inflation per month
+   - The cost per month of the house
+   - The year
+   - The month
 
 
 
