@@ -93,10 +93,10 @@ the house:
    - The cost per month of the house
    - The year
    - The month
-- In the second option Input rented the user will input the number of the
-house:
-   -The month rented
-   -The year rented
+- In the second option Input rented the user will input the number of 
+the house:
+   - The month rented
+   - The year rented
 
      
 
