@@ -88,11 +88,11 @@ experience allowing him to performe various actions in each menu.
 and the message "Enter your choice:"
 
 - In the first option the user will input the number of the house
-- The value of the house
-- The inflation per month
-- The cost per month of the house
-- The year
-- The month
+ - The value of the house
+ - The inflation per month
+ - The cost per month of the house
+ - The year
+ - The month
 
 
 
