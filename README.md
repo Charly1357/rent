@@ -88,7 +88,8 @@ experience allowing him to performe various actions in each menu.
 and the message "Enter your choice:"
 - Option 1  The rent is calculated by taking the value of the house
 multiply it with 8% add the inflation and the costs/month and you have the
-rent
+rent and the necesary income is calculated by rent/0.3 this means that only
+30% of your income should be used for the rent.
 - In the first option Input data houses the user will input the number of
 the house:
    - The value of the house
