@@ -69,15 +69,17 @@ the other for the house rented<br>
 
 ### Main Menu
 
-- This screen shows the survey main menu that gives the user six
+- This screen shows the survey main menu that gives the user six<br>
 options:
-      - Input data houses
-      - Input data rented houses
-      - Show value houses
-      - Show houses rented
-      - Show rent house income necesary
-      - Show the highest rent
-      - Exit
+    - Input data houses
+    - Input data rented houses
+    - Show value houses
+    - Show houses rented
+    - Show rent house income necesary
+    - Show the highest rent
+    - Exit
+-By adding multiple options the user always has a more complete<br>
+experience allowing him to performe various actions in each menu.
 
 
 
