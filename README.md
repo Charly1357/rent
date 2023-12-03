@@ -86,9 +86,9 @@ experience allowing him to performe various actions in each menu.
 
 - This part of the program shows all the questions with the options below<br>
 and the message "Enter your choice:"
-- 1 in this option the rent is calculated by taking the value of the house
-- multiply it with 8% add the inflation and the costs/month and you have the
-- rent
+- Option 1  The rent is calculated by taking the value of the house
+multiply it with 8% add the inflation and the costs/month and you have the
+rent
 - In the first option Input data houses the user will input the number of
 the house:
    - The value of the house
