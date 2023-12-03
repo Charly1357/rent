@@ -78,8 +78,16 @@ options:
     - Show rent house income necesary
     - Show the highest rent
     - Exit
--By adding multiple options the user always has a more complete<br>
+- By adding multiple options the user always has a more complete<br>
 experience allowing him to performe various actions in each menu.
+![Main Menu]()
+
+### Input of Data 
+
+- This part of the program shows all the questions with the options below<br>
+and the message "Enter your choice:"
+
+
 
 
 
