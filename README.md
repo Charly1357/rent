@@ -69,7 +69,8 @@ the other for the house rented<br>
 
 ### Main Menu
 
-- This screen shows the survey main menu that gives the user six<br> options:
+- This screen shows the survey main menu that gives the user six
+options:
       - Input data houses
       - Input data rented houses
       - Show value houses
