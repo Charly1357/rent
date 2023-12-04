@@ -216,7 +216,7 @@ the survey data
  
 ## Feature Testing
 
-TEST      |  DESIRED RESULT  |   PASS/FAIL | <br>
+TEST      |  DESIRED RESULT  |   PASS/FAIL |<br>
 Main Menu | The main menu has 7 options | Input data houses Input<br> datas rented houses <br>Show value houses Show rent house income necesary Show highest rent Exit
 
 
