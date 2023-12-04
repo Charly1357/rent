@@ -7,8 +7,10 @@ from tabulate import tabulate
 
 
 from google.oauth2.service_account import Credentials
-from colorama import Fore,Style,Back
-""" Library imports pandas for the data tabulate for the rows and columns of data etc"""
+from colorama import Fore, Style, Back
+"""
+Library imports pandas for the data tabulate for the rows and columns of data et
+"""
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive.file",
@@ -34,6 +36,7 @@ GREEN = Fore.GREEN
 BRIGHT = Style.BRIGHT
 RESET = Style.RESET_ALL
 
+
 def get_house_data():
     """Get the data from the houses/inflation/costs/year/month"""
     clear_screen()
@@ -45,14 +48,16 @@ def get_house_data():
         cost = input("Enter the cost you had to invest in the house:\n")
         year = input("Enter the year:\n")
         month = input("Enter the month:\n")
-        data_str = house_number,value_house,monthly_inflation,cost,year,month
+        data_str = house_number, value_house, monthly_inflation, cost, year, month
         clear_screen()
 
         if validate_data(data_str):
             break
     
     return data_str
-""" Validate the input data """
+    """ Validate the input data """
+
+
 def validate_data(values):
         try:
             [int(value)for value in values]
