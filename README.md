@@ -82,6 +82,9 @@ the other for the house rented<br>
 
 ## Features
 
+![mainmenurent](https://github.com/Charly1357/rent/assets/93468053/a8cf0439-f909-459d-8af7-c8f8c1a907f3)
+
+
 ### Main Menu
 
 - This screen shows the survey main menu that gives the user six<br>
