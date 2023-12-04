@@ -176,6 +176,16 @@ the survey data
   As a user ,I would like to be able to choose whether to input data ,show the data  or exit
   the program
   - The input data should be filtered by the highest return for the rent
+  - As a user ,I would like to see all the information of the google sheets
+
+## Code Validation
+- This program was validated using the PEP8 tool provided by Code Institute 
+53: E501 line too long (82 > 79 characters)
+64: E117 over-indented
+65: E225 missing whitespace around operator
+70: E901 IndentationError
+ 
+
  
   
   
