@@ -1,32 +1,214 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Calculating Rent
 
-Welcome,
+![Calculating Rent]()
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+This python project calculates the rent from the value of the houses its
+costs and the inflation <br>
+It displays its value and the amount of money necesary to rent the house 
+as well as the hightest<br> rent paid.<br>
+All the values are taken or saved in the google sheets and the highest 
+rent is calculated from the<br> sheet.
 
-## Reminders
+The project can be viewed :
+https://renting-eeafc7b2d4e6.herokuapp.com/
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+## Table of Contents
+1. [User Experience](#user-experience-ux)
+    - [Project Goals](#project-goalse)
+    - [User Stories](#user-stories)
+    - [Data Model](#data-model)
+    - [Flowchart](#flowchart)
+2. [Features](#features)
+    - [Main Menu](#main-menu)
+    - [House Data](#house-data)
+    - [Rented Houses](#rented-houses)
+    - [View Result](#view-result)
+    - [Exit Screen](#exit-screen)
+3. [Technologies Used](#technologies-used)
+    -[Languages](#languages)
+    -[Frameworks,Libraries  Programms](#frameworks-libraries-programms)
+4. [Testing](#testing)
+    -[Testing User Stories](#testing-user-stories)
+    -[Code Validation](#code-validation)
+    -[Feature Testing](#feature-testing)
+5. [Deployment](#deployment)
+6. [Credit](#credit)
+    -[Content](#content)
+    -[Media](#media)
+    -[Code](#code)
+7. [Acknowledgements](#acknowledgements)
+    
+## User experience (UX)
 
-## Creating the Heroku app
+### Project Goals
+- Collect data from user
+- Store data in a Google sheet.
+- Show result
+- Implement data validation for all inputs.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+### User Stories
+-As a user,I would like that the program helps me to earn more money
+-I would like to choose whether to input data or see the results or exit
+-As a user, I would like to see my results filtered according to my needs
 
-1. `heroku/python`
-2. `heroku/nodejs`
+### Data Model
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+The program uses a Google sheet to store the information collected from 
+the input.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+A pandas data frame is used to filter the highest rent
 
-Connect your GitHub repository and deploy as normal.
+The user can select between two input once for the value of the house<br>
+the other for the house rented<br>
 
-## Constraints
+### Flowchart
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+![Flowchart]()
 
----
+## Features
 
-Happy coding!
+### Main Menu
+
+- This screen shows the survey main menu that gives the user six<br>
+options:
+    - Input data houses
+    - Input data rented houses
+    - Show value houses
+    - Show houses rented
+    - Show rent house income necesary
+    - Show the highest rent
+    - Exit
+- By adding multiple options the user always has a more complete<br>
+experience allowing him to performe various actions in each menu.
+![Main Menu]()
+
+### Input of Data 
+
+- This part of the program shows all the questions with the options below<br>
+and the message "Enter your choice:"
+- Option 1  The rent is calculated by taking the value of the house
+multiply it with 0.008 add the inflation/100 and the costs/month and you have the
+rent and the necesary income is calculated by rent/0.3 this means that only
+30% of your income should be used for the rent.
+In all the input data option the data is always validated if it is correct
+- In the first option Input data houses the user will input the number of
+the house:
+   - The value of the house
+   - The inflation per month
+   - The cost per month of the house
+   - The year
+   - The month
+![Input data house]()
+
+- In the second option Input data house rented the user will input the number of 
+the house:
+   - The month rented
+   - The year rented
+![Input house rented]()
+
+- The third option shows te value of
+the houses:
+   - num/house the number of the house
+   - v/house the value of the house
+   - inflat/month the monthly inflations
+   - cost/month
+   - year
+   - month
+![Show house data]()
+
+- The fourth option shows the
+houses rented:
+    - house number of the house
+    - month the month it is rented
+    - year the year it is rented
+![Show house rented]()
+
+- The fifth option shows the rent and
+the necesary income:
+    - house_number
+    - rent
+    - income
+    - year
+    - month
+![Show rent and income house]()
+
+- The sixth option shows the filter of the
+highest rent:
+     - house_number
+     - rent
+     - income
+     - year
+     - month
+![Show highest rent]()
+
+- The seventh option shows
+the:
+     - Exit
+     - When the user choose exit it says
+     - ***Thanks and Goodbye *** and leaves the program
+![Exit]()
+
+## Technology Used
+
+### languages
+
+-Python
+
+- [Diagrams](https://app.diagrams.net): this was used to create a flowchart in
+the planning stage of the project.
+- [Colorama](https://pypi.org/project/colorama/):this was used to add color to the terminal.
+- [Tabulata](https://pypi.org/project/tabulate/):this was used to display data in tables.
+- [Pandas](https://pypi.org/project/pandas/):this was used to store and analyse survey data
+using data frames.
+- [time](https://pypi.org/project/python-time/)This was used to work with time. This was used for waiting during code execution.
+- [Gspread](https.//doc.gspread.org/en/v5.12.0/):this is the API for Google sheets,which stores
+the survey data
+- [Gitpod](https://www.gitpod.io):this was used to write,commit and push the code to GitHub
+- [GitHub](https://github.com/):this was used to store the project
+- [Heroku](https://id.heroku.com/login):this was used to host and deploy the finished project
+
+## Testing
+
+### Testing User Stories
+- As a user ,I would like to understand the program purpose.
+  - The program always shows readable instructions and maintains a smooth path through menus
+  and questions.
+  As a user ,I would like to be able to choose whether to input data ,show the data  or exit
+  the program
+  - The input data should be filtered by the highest return for the rent
+ 
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
