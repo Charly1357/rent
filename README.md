@@ -1,6 +1,6 @@
 # Calculating Rent
 
-![Calculating Rent]()
+![Calculating Rent](https://github.com/Charly1357/rent/issues/1#issue-2023694891)
 
 This python project calculates the rent from the value of the houses its
 costs and the inflation <br>
