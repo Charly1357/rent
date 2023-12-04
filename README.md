@@ -87,6 +87,7 @@ the other for the house rented<br>
 
 ### Main Menu
 
+
 - This screen shows the survey main menu that gives the user six<br>
 options:
     - Input data houses
@@ -98,7 +99,7 @@ options:
     - Exit
 - By adding multiple options the user always has a more complete<br>
 experience allowing him to performe various actions in each menu.
-![Main Menu]()
+  
 
 ### Input of Data 
 
@@ -116,7 +117,9 @@ the house:
    - The cost per month of the house
    - The year
    - The month
-![Input data house]()
+
+![datahouse](https://github.com/Charly1357/rent/assets/93468053/580e2066-cf48-40e9-bb63-038f74662517)
+
 
 - In the second option Input data house rented the user will input the number of 
 the house:
