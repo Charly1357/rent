@@ -63,7 +63,7 @@ A pandas data frame is used to filter the highest rent
 The user can select between two input once for the value of the house<br>
 the other for the house rented<br>
 
-### Flowchart
+
 
 ![spreadsheets1](https://github.com/Charly1357/rent/assets/93468053/b892dd6a-0ff4-461c-a937-71c6d350d8a6)
 
@@ -74,6 +74,8 @@ the other for the house rented<br>
 
 ![spreadsheet3](https://github.com/Charly1357/rent/assets/93468053/917e65cf-1a38-4b21-bc82-fa275e0764a9)
 
+
+### Flowchart
 
 ## Features
 
