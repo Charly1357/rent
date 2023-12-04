@@ -70,6 +70,8 @@ the other for the house rented<br>
 
 ![spreadsheet2](https://github.com/Charly1357/rent/assets/93468053/17382cac-5f5e-412d-a99f-831bf68d6270)
 
+
+
 ![spreadsheet3](https://github.com/Charly1357/rent/assets/93468053/917e65cf-1a38-4b21-bc82-fa275e0764a9)
 
 
