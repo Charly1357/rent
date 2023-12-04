@@ -125,7 +125,9 @@ the house:
 the house:
    - The month rented
    - The year rented
-![Input house rented]()
+
+![rentedhouse](https://github.com/Charly1357/rent/assets/93468053/14c7949f-7b0b-4bfd-bfda-82483f48210b)
+
 
 - The third option shows te value of
 the houses:
