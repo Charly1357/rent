@@ -145,7 +145,9 @@ houses rented:
     - house number of the house
     - month the month it is rented
     - year the year it is rented
-![Show house rented]()
+
+![showrenthouse](https://github.com/Charly1357/rent/assets/93468053/c988c9a3-c16d-4e40-8234-bd0953ae034a)
+
 
 - The fifth option shows the rent and
 the necesary income:
@@ -154,7 +156,9 @@ the necesary income:
     - income
     - year
     - month
-![Show rent and income house]()
+
+![show5](https://github.com/Charly1357/rent/assets/93468053/e33a7644-f5ad-4611-bed2-351a7615ea46)
+
 
 - The sixth option shows the filter of the
 highest rent:
@@ -163,14 +167,15 @@ highest rent:
      - income
      - year
      - month
-![Show highest rent]()
+![highestrent](https://github.com/Charly1357/rent/assets/93468053/21778241-6bab-4230-973a-5595cc083cd9)
+
 
 - The seventh option shows
 the:
      - Exit
      - When the user choose exit it says
      - ***Thanks and Goodbye *** and leaves the program
-![Exit]()
+
 
 ## Technology Used
 
