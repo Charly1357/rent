@@ -41,13 +41,13 @@ def get_house_data():
     """Get the data from the houses/inflation/costs/year/month"""
     clear_screen()
     while True:
-        print("Please enter the values of the house in whole numbers")
-        house_number = input("Enter your house number:\n")
-        value_house = input("Enter the value of your house:\n")
-        monthly_inflation = input("Enter the monthly_inflation:\n")
-        cost = input("Enter the cost you had to invest in the house:\n")
+        print("Please enter the values of the house in whole numbers 1,2,3 etc")
+        house_number = input("Enter your house number example[1,2,3,4,5 etc]:\n")
+        value_house = input("Enter the value of your house: 200000 ,300000\n")
+        monthly_inflation = input("Enter the monthly_inflation:in integer numbers (1,2,3)\n")
+        cost = input("Enter the cost you had to invest in the house monthly cost:(200,300)\n")
         year = input("Enter the year:\n")
-        month = input("Enter the month:\n")
+        month = input("Enter the month:(1,2,3,4..12\n")
         data_str = house_number, value_house, monthly_inflation, cost, year, month
         clear_screen()
 
