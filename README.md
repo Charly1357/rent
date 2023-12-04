@@ -144,8 +144,27 @@ highest rent:
 - The seventh option shows
 the:
      - Exit
-     - ***Thanks and Goodbye ***
+     - When the user choose exit it says
+     - ***Thanks and Goodbye *** and leaves the program
 ![Exit]()
+
+## Technology Used
+
+### languages
+
+-Python
+
+- [Diagrams](https://app.diagrams.net): this was used to create a flowchart in
+the planning stage of the project.
+- [Colorama](https://pypi.org/project/colorama/):this was used to add color to the terminal.
+- [Tabulata](https://pypi.org/project/tabulate/):this was used to display data in tables.
+- [Pandas](https://pypi.org/project/pandas/):this was used to store and analyse survey data
+using data frames.
+- [time](https://pypi.org/project/python-time/)You can use the time module in your Python scripts to work with time. You can do actions such as retrieving the current time, waiting during code execution, and measuring the efficiency of your code.
+- [Gspread](https.//doc.gspread.org/en/v5.12.0/):this is the API for Google sheets,which stores
+the survey data
+- [Gitpod](https://www.gitpod.io):this was used to write,commit and push the code to GitHub
+
 
 
 
