@@ -160,11 +160,12 @@ the planning stage of the project.
 - [Tabulata](https://pypi.org/project/tabulate/):this was used to display data in tables.
 - [Pandas](https://pypi.org/project/pandas/):this was used to store and analyse survey data
 using data frames.
-- [time](https://pypi.org/project/python-time/)You can use the time module in your Python scripts to work with time. You can do actions such as retrieving the current time, waiting during code execution, and measuring the efficiency of your code.
+- [time](https://pypi.org/project/python-time/)This was used to work with time. This was used for waiting during code execution.
 - [Gspread](https.//doc.gspread.org/en/v5.12.0/):this is the API for Google sheets,which stores
 the survey data
 - [Gitpod](https://www.gitpod.io):this was used to write,commit and push the code to GitHub
-
+- [GitHub](https://github.com/):this was used to store the project
+- [Heroku](https://id.heroku.com/login):this was used to host and deploy the finished project
 
 
 
