@@ -137,7 +137,8 @@ the houses:
    - cost/month
    - year
    - month
-![Show house data]()
+![showdatahouse](https://github.com/Charly1357/rent/assets/93468053/4328d065-1ed0-4b9c-bacd-80087c9c3c86)
+
 
 - The fourth option shows the
 houses rented:
