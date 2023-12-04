@@ -77,6 +77,9 @@ the other for the house rented<br>
 
 ### Flowchart
 
+![rentflowchart](https://github.com/Charly1357/rent/assets/93468053/4a4b7981-b883-497d-a9ef-d3fde0ed8eb9)
+
+
 ## Features
 
 ### Main Menu
