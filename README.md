@@ -180,10 +180,10 @@ the survey data
 
 ## Code Validation
 - This program was validated using the PEP8 tool provided by Code Institute 
-53: E501 line too long (82 > 79 characters)
-64: E117 over-indented
-65: E225 missing whitespace around operator
-70: E901 IndentationError
+   - 53: E501 line too long (82 > 79 characters)
+   - 64: E117 over-indented
+   - 65: E225 missing whitespace around operator
+   - 70: E901 IndentationError
  
 
  
