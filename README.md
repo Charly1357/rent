@@ -167,8 +167,18 @@ the survey data
 - [GitHub](https://github.com/):this was used to store the project
 - [Heroku](https://id.heroku.com/login):this was used to host and deploy the finished project
 
+## Testing
 
-
+### Testing User Stories
+- As a user ,I would like to understand the program purpose.
+  - The program always shows readable instructions and maintains a smooth path through menus
+  and questions.
+  As a user ,I would like to be able to choose whether to input data ,show the data  or exit
+  the program
+  - The input data should be filtered by the highest return for the rent
+ 
+  
+  
 
 
 
