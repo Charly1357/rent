@@ -67,7 +67,9 @@ the other for the house rented<br>
 
 ![spreadsheets1](https://github.com/Charly1357/rent/assets/93468053/b892dd6a-0ff4-461c-a937-71c6d350d8a6)
 
-![Flowchart]()
+
+![spreadsheet2](https://github.com/Charly1357/rent/assets/93468053/17382cac-5f5e-412d-a99f-831bf68d6270)
+
 
 ## Features
 
