@@ -1,3 +1,4 @@
+![responsive](https://github.com/Charly1357/rent/assets/93468053/56a88358-1154-4c27-a400-47cf2cd9757f)
 # Calculating Rent
 
 ![Calculating Rent](https://github.com/Charly1357/rent/issues/1#issue-2023694891)
