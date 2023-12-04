@@ -179,7 +179,7 @@ def welcome():
 
 def goodbye():
     print("\n *** Thanks and Goodbye ***\n")
-    time.sleep(3)
+    time.sleep(6)
     clear_screen()
     exit()
     
