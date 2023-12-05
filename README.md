@@ -220,17 +220,19 @@ TEST      |  DESIRED RESULT  |   PASS/FAIL |<br>
 Main Menu | The main menu has 7 options | Input data houses Input<br> 
 data rented houses Show value houses Show rent house income necesary Show highest rent Exit Pass
 
-- Input data house 6 questions are asked:
-                                -  House number,Value of the house,Monthly inflation<br>
-                                maintenance cost, Year, Month .
-                                -  Validataion data
-                                -  Data transformed in int
-                                -  Data is updated in the google sheets value
-                                -  The rent is calculated from the House value monthly inflation
-                                maintenace cost.
-                                -  Data is updated in the google sheets cost
-                                -  Clear screen
-                                -  Return to the main menu
+- Input data house 6 questions are
+asked:
+   -  House number,Value of the house,Monthly inflation<br>
+   maintenance cost, Year, Month .
+   -  Validataion data
+   -  Data transformed in int
+   -  Data is updated in the google sheets value
+   -  The rent is calculated from the House value monthly inflation
+   maintenace cost.
+   -  Data is updated in the google sheets cost
+   -  Clear screen
+   -  Return to the main menu
+   -  
 Everything worked pass
 
 
