@@ -220,7 +220,7 @@ TEST      |  DESIRED RESULT  |   PASS/FAIL |<br>
 Main Menu | The main menu has 7 options | Input data houses Input<br> 
 data rented houses Show value houses Show rent house income necesary Show highest rent Exit Pass
 
-Input data house 6 questions are asked:
+- Input data house 6 questions are asked:
                   - 1 House number,Value of the house,Monthly inflation<br>
                   maintenance cost, Year, Month .
                   - 2 Validataion data
