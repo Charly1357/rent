@@ -255,6 +255,9 @@ Everything worked pass
         - cost/month
         - year
         - month
+    - time.sleep(5) it shows the data for 5 seconds
+    - clear screen
+    - first_selection it takes you back to the main menu
 
 Everything worked pass
       
