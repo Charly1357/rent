@@ -163,18 +163,39 @@ def calculate_rent(data):
 """ Input data about the rented houses """
 
 def houses_rented():
-    clear_screen()
-    while True:
+         clear_screen()
+         #while True:
          print("Please enter  the data  of the rented house ")
-         house_number = input("Enter your house number:(1,2,3,4,5 ej\n")
-         month_rented = input("Enter the month the house was rented( 1,2,3 ..\n")
-         year_rented = input("Enter the year the house was rented:\n")
+         while True:
+             try:
+                house_number = int(input("Enter your house number:(1,2,3,4,5 ej\n"))
+             except ValueError:
+                print("Sorry int value")
+                continue
+             else:
+                break
+         while True:
+             try:
+                month_rented = int(input("Enter the month the house was rented( 1,2,3 ..\n"))
+             except ValueError:
+                print("Sorry int value")
+                continue
+             else:
+                break
+         while True:
+             try:  
+               year_rented = int(input("Enter the year the house was rented:\n"))
+             except ValueError:
+                print("Sorry int value")
+                continue
+             else:
+                break
          sales_data = house_number,month_rented,year_rented
          clear_screen()
-         if validatedata(sales_data):
-            break
+           #if validatedata(sales_data):
+             #break
     
-    return sales_data
+         return sales_data
 
 """ validation of the rented houses """
 
