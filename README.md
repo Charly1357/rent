@@ -247,8 +247,8 @@ Everything worked pass
 
 - Show value houses option 3 main menu
    - clear_screen()
-   - valuehouse() the data of the value table in the googlesheet rent
-   it shows:
+   - valuehouse() the data of the value tabel in the googlesheet rent
+   it shows table data :
         - number house
         - value house
         - inflation/month
@@ -260,6 +260,33 @@ Everything worked pass
     - first_selection it takes you back to the main menu
 
 Everything worked pass
+
+- Show houses rented option 4 main menu
+   - clear-screen()
+   - renthouse() the tabel cost in the googlesheet rent is
+   shown table data:
+        - house number
+        - month
+        - year
+    - time.sleep(5) it shows the data for 5 seconds
+    - clear_screen()
+    - first_selection it takes you back to the main menu
+
+Everything worked pass
+
+- Show rent house income necesary option 5 main menu
+   - clear_screen()
+   - rent_income() it shows the data from the tabel cost in the
+   googlesheet rent table data:
+        - house_number
+        - rent
+        - income
+        - year
+        - month
+    - time_sleep(5)
+    - clear_screen()
+    - first_selection() back to the main menu
+    
       
 
 
