@@ -293,6 +293,7 @@ Everything worked pass
      - clear_screen()
      - max_rent() calculates  with pd from pandas
      and idmax() the highest rent in the table cost
+     table data:
          - house_number
          - rent
          - year
