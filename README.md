@@ -230,10 +230,34 @@ asked:
    -  The rent is calculated from the House value monthly inflation
    maintenace cost.
    -  Data is updated in the google sheets cost
-   -  Clear screen
-   -  Return to the main menu
-   -  
+   -  clear screen
+   -  return to the main menu
+   
 Everything worked pass
+
+- Input data rented house 3 questions
+    - Enter your house number(1,2,3)
+    - Enter the month the house was rented
+    - Enter the year the house was rented
+    - clear_screen
+    - validate
+    - return to the main menu
+      
+Everything worked pass
+
+- Show value houses option 3 main menu
+   - clear_screen()
+   - valuehouse() the data of the value table in the googlesheet rent
+   it shows:
+        - number house
+        - value house
+        - inflation/month
+        - cost/month
+        - year
+        - month
+
+Everything worked pass
+      
 
 
 
