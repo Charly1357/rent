@@ -292,7 +292,7 @@ Everything worked pass
   - Show the highest rent option 6 main menu
      - clear_screen()
      - max_rent() calculates  with pd from pandas
-     and idmax() the highest rent in the table cost
+     and idmax() shows highest rent in the table cost<br>
      table data:
          - house_number
          - rent
