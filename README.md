@@ -218,7 +218,123 @@ the survey data
 
 TEST      |  DESIRED RESULT  |   PASS/FAIL |<br>
 Main Menu | The main menu has 7 options | Input data houses Input<br> 
-data rented houses Show value houses Show rent house income necesary Show highest rent Exit
+data rented houses Show value houses Show rent house income necesary Show highest rent Exit Pass
+
+- Input data house 6 questions are
+asked:
+   -  House number,Value of the house,Monthly inflation<br>
+   maintenance cost, Year, Month .
+   -  Validataion data
+   -  Data transformed in int
+   -  Data is updated in the google sheets value
+   -  The rent is calculated from the House value monthly inflation
+   maintenace cost.
+   -  Data is updated in the google sheets cost
+   -  clear screen
+   -  return to the main menu
+   
+Everything worked pass
+
+- Input data rented house 3 questions
+    - Enter your house number(1,2,3)
+    - Enter the month the house was rented
+    - Enter the year the house was rented
+    - clear_screen
+    - validate
+    - return to the main menu
+      
+Everything worked pass
+
+- Show value houses option 3 main menu
+   - clear_screen()
+   - valuehouse() the data of the value tabel in the googlesheet rent
+   it shows table data :
+        - number house
+        - value house
+        - inflation/month
+        - cost/month
+        - year
+        - month
+    - time.sleep(5) it shows the data for 5 seconds
+    - clear screen
+    - first_selection it takes you back to the main menu
+
+Everything worked pass
+
+- Show houses rented option 4 main menu
+   - clear-screen()
+   - renthouse() the tabel cost in the googlesheet rent is
+   shown table data:
+        - house number
+        - month
+        - year
+    - time.sleep(5) it shows the data for 5 seconds
+    - clear_screen()
+    - first_selection it takes you back to the main menu
+
+Everything worked pass
+
+- Show rent house income necesary option 5 main menu
+   - clear_screen()
+   - rent_income() it shows the data from the tabel cost in the
+   googlesheet rent table data:
+        - house_number
+        - rent
+        - income
+        - year
+        - month
+    - time_sleep(5)
+    - clear_screen()
+    - first_selection() back to the main menu
+ 
+  Everything worked pass
+
+  - Show the highest rent option 6 main menu
+     - clear_screen()
+     - max_rent() calculates  with pd from pandas
+     and idmax() shows highest rent in the table cost<br>
+     table data:
+         - house_number
+         - rent
+         - year
+         - month
+    - time_sleep(10) 10 seconds to see the data
+    - clear_screen()
+    - first_selection() it return to the main menu
+
+   Everything worked pass
+
+  - Exit stop the program option 7
+     - Print *** Thanks and Goodbye ***
+     - time.sleep(6)
+     - clear_screen()
+     - exit()
+   
+   Everything worked pass
+
+  ## Bugs
+
+  1. Lack of valuation of  data in every input:
+     - In both input it only analize the input data once all the data is given
+  2. In the Output of the highest rent value it prints information that is not necesary
+  Name 1 dytype:object
+  3. The input information needed should be better explained
+  4. Once you see the data there should be an option if you want to came back to
+  the main menu and not a time.sleep
+
+  ## Deployment
+
+  The program was developed in gitpod . It was then committed and pushed to Github.
+  The finished project was deployed in Heroku
+  The Deployment to Heroku was used in manual mode
+
+  ### Code
+  - Love Sandwiches 
+
+  
+    
+    
+      
 
 
 
