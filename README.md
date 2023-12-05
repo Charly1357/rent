@@ -312,6 +312,25 @@ Everything worked pass
    
    Everything worked pass
 
+  ## Bugs
+
+  1. Lack of valuation of  data in every input:
+     - In both input it only analize the input data once all the data is given
+  2. In the Output of the highest rent value it prints information that is not necesary
+  Name 1 dytype:object
+  3. The input information needed should be better explained
+  4. Once you see the data there should be an option if you want to came back to
+  the main menu and not a time.sleep
+
+  ## Deployment
+
+  The program was developed in gitpod . It was then committed and pushed to Github.
+  The finished project was deployed in Heroku
+  The Deployment to Heroku was used in manual mode
+
+  ### Code
+  - Love Sandwiches 
+
   
     
     
