@@ -38,25 +38,79 @@ RESET = Style.RESET_ALL
 
 
 def get_house_data():
-    """Get the data from the houses/inflation/costs/year/month"""
-    clear_screen()
-    while True:
+        """Get the data from the houses/inflation/costs/year/month"""
+        clear_screen()
         print("Please enter the values of the house in whole numbers 1,2,3 etc")
-        house_number = input("Enter your house number example[1,2,3,4,5 etc]:\n")
-        value_house = input("Enter the value of your house: 200000 ,300000\n")
-        monthly_inflation = input("Enter the monthly_inflation:in integer numbers (1,2,3)\n")
-        cost = input("Enter the cost you had to invest in the house monthly cost:(200,300)\n")
-        year = input("Enter the year:\n")
-        month = input("Enter the month:(1,2,3,4..12\n")
+        while True:
+            try:
+                 house_number = int(input("Please enter your house number example[1,2,3,4,5 etc]:\n "))
+            except ValueError:
+              print("Sorry, int value")
+              continue
+            else:
+               break
+
+        while True:
+            try:
+                 value_house = int(input("Enter the value of your house: 200000 ,300000:\n"))
+            except ValueError:
+                print("Sorry, int value")
+                continue
+            else:
+               break
+
+        while True:
+            try:
+                monthly_inflation = int(input("Enter the monthly_inflation:in integer numbers (1,2,3)\n"))
+            except ValueError:
+                print("Sorry,int value")
+                continue
+            else:
+                break
+
+        while True:
+            try:    
+                cost = int(input("Enter the cost you had to invest in the house monthly cost:(200,300)\n"))
+            except ValueError:
+                print("Sorry, int value")
+                continue
+            else:
+                break
+
+        while True: 
+            try:
+                year = int(input("Enter the year:\n"))
+            except ValueError:
+                print("Sorry, int value")
+                continue
+            else:
+                break
+
+        while True:
+            try:
+                month = int(input("Enter the month:(1,2,3,4..12\n"))
+            except ValueError:
+                print("Sorry,value int value")
+                continue
+            else:
+                break
+
         data_str = house_number, value_house, monthly_inflation, cost, year, month
+        print(data_str)
         clear_screen()
 
-        if validate_data(data_str):
-            break
+            #if validate_data(data_str):
+               #break
     
-    return data_str
-    """ Validate the input data """
+        return data_str
 
+
+
+        """ Validate the input data """
+
+
+        
+    
 
 def validate_data(values):
         try:
@@ -112,8 +166,8 @@ def houses_rented():
     clear_screen()
     while True:
          print("Please enter  the data  of the rented house ")
-         house_number = input("Enter your house number:\n")
-         month_rented = input("Enter the month the house was rented\n")
+         house_number = input("Enter your house number:(1,2,3,4,5 ej\n")
+         month_rented = input("Enter the month the house was rented( 1,2,3 ..\n")
          year_rented = input("Enter the year the house was rented:\n")
          sales_data = house_number,month_rented,year_rented
          clear_screen()
@@ -212,7 +266,9 @@ def first_selection():
             print("Invalid input")
         if selection == 1:
             data = get_house_data()
-            sales_data = [int(num) for num in data]
+            print(data)
+            #sales_data = [int(num) for num in data]
+            sales_data = data
             update_worksheet(sales_data,"value")
             rent = calculate_rent(sales_data)
             update_worksheet(rent,"cost")
