@@ -303,6 +303,16 @@ Everything worked pass
     - first_selection() it return to the main menu
 
    Everything worked pass
+
+  - Exit stop the program option 7
+     - Print *** Thanks and Goodbye ***
+     - time.sleep(6)
+     - clear_screen()
+     - exit()
+   
+   Everything worked pass
+
+  
     
     
       
