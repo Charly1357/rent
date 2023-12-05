@@ -96,7 +96,7 @@ def get_house_data():
                 break
 
         data_str = house_number, value_house, monthly_inflation, cost, year, month
-        print(data_str)
+        #print(data_str)
         clear_screen()
 
             #if validate_data(data_str):
