@@ -221,16 +221,16 @@ Main Menu | The main menu has 7 options | Input data houses Input<br>
 data rented houses Show value houses Show rent house income necesary Show highest rent Exit Pass
 
 - Input data house 6 questions are asked:
-                  - 1 House number,Value of the house,Monthly inflation<br>
-                  maintenance cost, Year, Month .
-                  - 2 Validataion data
-                  - 3 Data transformed in int
-                  - 4 Data is updated in the google sheets value
-                  - 5 The rent is calculated from the House value monthly inflation
-                  maintenace cost.
-                  - 6 Data is updated in the google sheets cost
-                  - 7 Clear screen
-                  - 8 Return to the main menu
+                                -  House number,Value of the house,Monthly inflation<br>
+                                maintenance cost, Year, Month .
+                                -  Validataion data
+                                -  Data transformed in int
+                                -  Data is updated in the google sheets value
+                                -  The rent is calculated from the House value monthly inflation
+                                maintenace cost.
+                                -  Data is updated in the google sheets cost
+                                -  Clear screen
+                                -  Return to the main menu
 Everything worked pass
 
 
