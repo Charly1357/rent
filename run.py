@@ -320,7 +320,7 @@ def first_selection():
             print(WHITE + BRIGHT + "Select an option:\n")
             print(GREEN + BRIGHT + "1 - Input int data houses number,value,cost etc" + RESET)
             print(GREEN + BRIGHT +"2 - Input int data rented houses number,month,year" + RESET)
-            print(GREEN + BRIGHT +"3 - Show value houses" + RESET)
+            print(GREEN + BRIGHT +"3 - Show values houses" + RESET)
             print(GREEN + BRIGHT +"4 - Show houses rented" + RESET)
             print(GREEN + BRIGHT +"5 - Show rent house income necesary" + RESET)
             print(GREEN + BRIGHT +"6 - Show the highest rent " + RESET)
