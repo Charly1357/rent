@@ -244,18 +244,48 @@ def maxrent():
     max_index = df['rent'].idxmax()
     selected_row = df.iloc[max_index]
     print(selected_row)
+    while True:
+        try:
+           value = int(input(GREEN + BRIGHT + "Enter any int number(1,2,3,4..) to - return Main Menu :"))
+        except ValueError:
+                 print("Sorry,int value")
+                 continue
+        else:
+                  clear_screen
+                  first_selection()
+                  break
 
 """ All the data from the rented houses is printed """
 
 def renthouse():
     stock = SHEET.worksheet("rent_house").get_all_values()
     print(tabulate(stock,headers='firstrow',tablefmt='grid'))
+    while True:
+        try:
+           value = int(input(GREEN + BRIGHT + "Enter any int number(1,2,3,4..) to - return Main Menu :"))
+        except ValueError:
+                 print("Sorry,int value")
+                 continue
+        else:
+                  clear_screen
+                  first_selection()
+                  break
 
 """ All the data from the house is printed """
 
 def rent_income():
     stock = SHEET.worksheet("cost").get_all_values()
     print(tabulate(stock,headers='firstrow',tablefmt='grid'))
+    while True:
+        try:
+           value = int(input(GREEN + BRIGHT + "Enter any int number(1,2,3,4..) to - return Main Menu :"))
+        except ValueError:
+                 print("Sorry,int value")
+                 continue
+        else:
+                  clear_screen
+                  first_selection()
+                  break
 
 """ The screen is cleared otherwise the screen would have to much information """
 
@@ -326,21 +356,21 @@ def first_selection():
         elif selection == 4:
             clear_screen()
             renthouse()
-            time.sleep(5)
-            clear_screen()
-            first_selection()
+            #time.sleep(5)
+            #clear_screen()
+            #first_selection()
         elif selection == 5:
             clear_screen()
             rent_income() 
-            time.sleep(5)
-            clear_screen()
-            first_selection()
+            #time.sleep(5)
+            #clear_screen()
+            #first_selection()
         elif selection == 6:
             clear_screen()
             maxrent()
-            time.sleep(10)
-            clear_screen()
-            first_selection()
+            #time.sleep(10)
+            #clear_screen()
+            #first_selection()
         elif selection == 7:
             goodbye()
 welcome()
