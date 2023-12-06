@@ -221,7 +221,7 @@ def valuehouse():
     print(tabulate(stock,headers='firstrow',tablefmt='grid'))
     while True:
         try:
-           value = int(input(GREEN + BRIGHT + "Enter your choice any int number - return Main Menu :"))
+           value = int(input(GREEN + BRIGHT + "Enter any int number(1,2,3,4..) to - return Main Menu :"))
         except ValueError:
                  print("Sorry,int value")
                  continue
