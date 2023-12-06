@@ -216,8 +216,25 @@ def validatedata(values):
 """ Sheet with the data of the house number value of the house inflation/month cost/month year month """
 
 def valuehouse():
+    
     stock = SHEET.worksheet("value").get_all_values()
     print(tabulate(stock,headers='firstrow',tablefmt='grid'))
+    while True:
+        try:
+           value = int(input(GREEN + BRIGHT + "Enter your choice any int number - return Main Menu :"))
+        except ValueError:
+                 print("Sorry,int value")
+                 continue
+        else:
+                  clear_screen
+                  first_selection()
+                  break
+
+    
+
+      
+
+
 
 """ Calculation of the highest rent from the worksheet rent """
 
@@ -303,9 +320,9 @@ def first_selection():
         elif selection == 3:
             clear_screen()
             valuehouse()
-            time.sleep(5)
-            clear_screen()
-            first_selection()
+            #time.sleep(5)
+            #clear_screen()
+            #first_selection()
         elif selection == 4:
             clear_screen()
             renthouse()
